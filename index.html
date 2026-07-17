@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>Village Fortune</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="app">
+
+    <div id="header">
+
+        <div id="coins">
+            🪙 <span id="coini">10000</span>
+        </div>
+
+        <div id="gems">
+            💎 <span id="gemme">100</span>
+        </div>
+
+        <div id="spins">
+            🎰 <span id="giri">20</span>
+        </div>
+
+    </div>
+
+<div id="slotMachine">
+
+    <div class="slotWindow">
+
+        <div id="rullo1" class="rullo">
+            🪙
+        </div>
+
+        <div id="rullo2" class="rullo">
+            💎
+        </div>
+
+        <div id="rullo3" class="rullo">
+            🏰
+        </div>
+
+    </div>
+
+
+    <button id="spinButton">
+        🎰 GIRA
+    </button>
+
+</div>
+    
+    <div id="village">
+      
+      <h1 id="nomeVillaggio">
+Villaggio Verde
+</h1>
+
+<h2>
+🏘️ Villaggio livello 
+<span id="livelloVillaggio">1</span>
+<button id="testCoins">
+🪙 Aggiungi monete test
+</button>
+
+⭐
+<span id="stelle">0</span>
+
+</h2>
+<div id="progressBox">
+
+<div id="progressBar">
+
+</div>
+
+</div>
+
+<p id="progressText">
+0% completato
+</p>
+<button id="unlockVillage">
+
+🌍 Sblocca nuovo villaggio
+
+</button>
+
+<div class="building">
+
+<div id="casa">
+🏚️
+</div>
+
+<button onclick="costruisci(0)">
+Costruisci Casa
+</button>
+<p id="infoCasa">
+Livello: 0
+</p>
+<p id="costoCasa">
+</p>
+
+</div>
+
+
+
+<div class="building">
+
+<div id="torre">
+🪵
+</div>
+
+<button onclick="costruisci(1)">
+Costruisci Torre
+</button>
+<p id="infoTorre">
+Livello: 0
+</p>
+<p id="costoTorre">
+</p>
+
+</div>
+
+
+
+<div class="building">
+
+<div id="negozio">
+🛖
+</div>
+
+<button onclick="costruisci(2)">
+Costruisci Negozio
+</button>
+<p id="infoNegozio">
+Livello: 0
+</p>
+<p id="costoNegozio">
+</p>
+
+</div>
+
+<div id="dailyBonus">
+
+<h2>🎁 Bonus Giornaliero</h2>
+
+<button id="bonusButton">
+RITIRA
+</button>
+
+<p id="bonusResult"></p>
+
+</div>
+
+<div id="attack">
+
+<h2>⚔️ Attacco</h2>
+
+<p>
+Villaggio trovato:
+<span id="enemy">
+Nessuno
+</span>
+</p>
+
+<button id="attackButton">
+ATTACCA
+</button>
+
+<p id="attackResult"></p>
+
+</div>
+
+<div id="raid">
+
+<h2>🏴 Raid</h2>
+
+<p>
+Villaggio:
+<span id="raidEnemy">
+Nessuno
+</span>
+</p>
+
+
+<button id="findRaid">
+Cerca Villaggio
+</button>
+
+
+<div id="holes">
+
+<button onclick="scava(0)">
+⛏️ Scava 1
+</button>
+
+<button onclick="scava(1)">
+⛏️ Scava 2
+</button>
+
+<button onclick="scava(2)">
+⛏️ Scava 3
+</button>
+
+</div>
+
+
+<p id="raidResult"></p>
+
+
+</div>
+
+<div id="defense">
+
+<h2>🛡️ Difesa</h2>
+
+<p>
+Scudi:
+<span id="scudi">3</span>
+</p>
+
+<p>
+Difese riuscite:
+<span id="difese">0</span>
+</p>
+
+</div>
+
+<div id="mappaVillaggi">
+
+<h2>🗺️ Mappa Villaggi</h2>
+
+<div id="listaVillaggi">
+
+</div>
+
+</div>
+
+<div id="obiettivi">
+
+<h2>🎯 Obiettivi</h2>
+
+<p>
+🏗️ Costruzioni:
+<span id="obCostruzioni">0</span>/20
+</p>
+
+<p>
+⚔️ Attacchi vinti:
+<span id="obAttacchi">0</span>/10
+</p>
+
+<p>
+🏰 Villaggi completati:
+<span id="obVillaggi">0</span>/3
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="popupPremio">
+
+<div id="popupBox">
+
+<h2 id="popupTitolo">
+🎉 Complimenti!
+</h2>
+
+<p id="popupTesto">
+Premio ricevuto
+</p>
+
+<button id="chiudiPopup">
+OK
+</button>
+
+</div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
